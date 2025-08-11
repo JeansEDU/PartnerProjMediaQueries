@@ -1,0 +1,116 @@
+/* TODO: Make this responsive! */
+body {
+    background-color: cornsilk;
+}
+
+h1 {
+    border-top: 2px solid rosybrown;
+    border-bottom: 2px solid rosybrown;
+    padding: 8px 4px;
+    font-family: Baskerville Old Face, serif;
+    font-size: 2.0em;
+    color: #8d5152;
+    line-height: 1.5em;
+}
+
+img {
+    display: block;
+    width: 30%;
+}
+
+p {
+    margin: 30px;
+}
+
+footer {
+    font-weight: bold;
+    text-align: center;
+}
+
+/* mobile */
+@media screen and (max-width: 480px) {
+    img {
+        width: 100%;
+    }
+
+    img:not(:first-child) {
+        display: none;
+    }
+
+    h1 {
+        background-color: #FFE4C4;
+        text-align: center;
+    }
+
+    p {
+        margin: 0.5rem 0.125rem;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 960px) {
+    img {
+        width: 100%;
+    }
+
+    header img {
+        margin: 0 auto;
+        width: 60%;
+    }
+
+    #sheet div {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: .75rem;
+    }
+
+    h1 {
+        background-color: #FFFEF8;
+    }
+
+    p {
+        margin: 2rem 2rem;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    img {
+        width: 100%;
+    }
+
+    header img {
+        margin: 0 auto;
+        width: 50%;
+    }
+
+    #sheet {
+        background-color: #CC5C5C;
+        margin: 1rem 0;
+        padding: 1rem 0;
+    }
+
+    #sheet h1 {
+        border-style: none;
+        color:white;
+        background-color:inherit;
+    }
+    
+    #sheet div {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: .75rem;
+    }
+
+    h1 {
+        background-color: #FFFEF8;
+    }
+
+    article div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    p {
+        margin: 1rem .5rem;
+        line-height: 1.35;
+    }
+}
